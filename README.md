@@ -2,29 +2,23 @@
 
 An intuitive, custom Keras Layer for Time2Vec Transformation.
 
-Keras implementation of Non-local blocks from [[1]](https://arxiv.org/abs/1711.07971).
+Keras implementation of Non-local blocks from [[1]](https://arxiv.org/abs/1907.05321).
 
 
 # Concept
 
 Time2Vec offers a versatile representation of time with three fundamental properties. It encapsulates scalar notion of time $\tau$,  in $\mathbf{t2v}(\tau)$,
-a vector of size k + 1. This transformation is defined as follows[[1]]:
+a vector of size k + 1. This transformation, for an $i^{th}$  element of $\mathbf{t2v}$, is defined as follows:
 
 
 ```math
 \mathbf{t2v}(\tau)[i] = 
     \begin{cases}
-        \omega_i \tau + \phi_i \ifnum i = 0.\\
-        \mathcal{F}(\omega_i \tau + \phi_i) \ifnum  \leq i \leq k
+        \omega_i \tau + \phi_i & if & i = 0.\\
+        \mathcal{F}(\omega_i \tau + \phi_i) & if & 1 \leq i \leq k
     \end{cases}
 ```
-
-
-
-The below image shows a random walk and with its $\mathbf{t2v}$ (with a $k$ of k=20):
-<center><img src="https://github.com/andrewrgarcia/keras-time2vec/blob/master/images/rep.png?raw=true" width=50% ></center>
-
-
+The above incorporates a periodic activation function denoted as $\mathcal{F}$, and involves learnable parameters $\omega_i$ and $\phi_i$ [[1]](https://arxiv.org/abs/1907.05321). 
 
 # Usage Templates
 
