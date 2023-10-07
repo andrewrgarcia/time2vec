@@ -14,8 +14,8 @@ a vector of size k + 1. This transformation, for an $i^{th}$  element of $\mathb
 ```math
 \mathbf{t2v}(\tau)[i] = 
     \begin{cases}
-        \omega_i \tau + \phi_i & \mathrm{if} & i = 0.\\
-        \mathcal{F}(\omega_i \tau + \phi_i) & \mathrm{if} & 1 \leq i \leq k
+        \omega_i \tau + \phi_i, & \mathrm{if} & i = 0.\\
+        \mathcal{F}(\omega_i \tau + \phi_i), & \mathrm{if} & 1 \leq i \leq k.
     \end{cases}
 ```
 The above incorporates a periodic activation function denoted as $\mathcal{F}$, and involves learnable parameters $\omega_i$ and $\phi_i$ [[1]](https://arxiv.org/abs/1907.05321). 
