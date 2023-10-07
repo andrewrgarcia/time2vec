@@ -14,8 +14,8 @@ a vector of size k + 1. This transformation is defined as follows[[1]]:
 ```math
 \mathbf{t2v}(\tau)[i] = 
     \begin{cases}
-        \omega_i \tau + \phi_i \if i = 0.\\
-        \mathcal{F}(\omega_i \tau + \phi_i) \if  \leq i \leq k
+        \omega_i \tau + \phi_i \ifnum i = 0.\\
+        \mathcal{F}(\omega_i \tau + \phi_i) \ifnum  \leq i \leq k
     \end{cases}
 ```
 
@@ -28,7 +28,7 @@ The below image shows a random walk and with its $\mathbf{t2v}$ (with a $k$ of k
 
 # Usage Templates
 
-The script `time2vec.py` contains the `Time2Vec` instance which takes a single or a group of time series and concatenates the above $mathbf{t2v}$ tensor to it.
+The script `time2vec.py` contains the `Time2Vec` instance which takes a single or a group of time series and concatenates the above $\mathbf{t2v}$ tensor to it.
 
 ```python
 from time2vec import Time2Vec
