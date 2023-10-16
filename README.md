@@ -28,6 +28,7 @@ The script `time2vec.py` contains the `Time2Vec` instance which takes a single o
 from time2vec import Time2Vec
 
 k = 20
+time_series = np.linspace(0, 100, 1000).reshape(-1,1)
 time_series = Time2Vec(num_frequency=k)(time_series)
 print(time_series)
 ...
