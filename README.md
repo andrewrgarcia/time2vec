@@ -1,6 +1,6 @@
-# Keras Time2Vec
+# Time2Vec TensorFlow
 
-An intuitive, custom Keras Layer for Time2Vec Transformation.
+An intuitive, custom TensorFlow.Keras Layer for Time2Vec Transformation.
 
 Keras implementation of Non-local blocks from [[1]](https://arxiv.org/abs/1907.05321).
 
