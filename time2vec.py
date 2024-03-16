@@ -58,13 +58,15 @@ class Time2Vec(layers.Layer):
 
         return tf.concat([x, trend_component, periodic_component], axis=-1)
 
-    def compute_output_shape(self, input_shape):
+    def obtain_output_shape(self, input_shape):
         """
-        Computes the output shape of the layer.
+        Obtain the output shape of the layer.
 
         Parameters
         ----------
         input_shape: tuple
             The shape of the input data.
         """
-        return input_shape[:-1] + (input_shape[-1] + self.num_frequency * 2,)
+        # Sum of trend (1) and periodic components
+        output_feature_dim = input_shape[-1] + self.num_frequency       
+        return (input_shape[0], input_shape[1], output_feature_dim)
