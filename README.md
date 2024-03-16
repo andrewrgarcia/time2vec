@@ -34,6 +34,7 @@ print(time_series)
 ...
 ```
 
+For a more interactive experience check out this [Google Colab](https://colab.research.google.com/drive/1P2BOAaQlo54SqYCsL8FFq1PffDjQuO1F?usp=sharing)
 
 
 1. Seyed Mehran Kazemi, Rishab Goel, Sepehr Eghbali, Janahan Ramanan, Jaspreet Sahota, Sanjay Thakur, Stella Wu, Cathal Smyth, Pascal Poupart, Marcus Brubaker. "Time2Vec: Learning a Vector Representation of Time." arXiv:1907.05321 [cs.LG], 11 Jul 2019. [Link](https://arxiv.org/abs/1907.05321)
