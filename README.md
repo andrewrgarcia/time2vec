@@ -1,8 +1,7 @@
-# Time2Vec TensorFlow
+# Time2Vec: Multivariate Implementation in Keras and Torch
 
-An intuitive, custom TensorFlow.Keras Layer for Time2Vec Transformation.
+Keras and PyTorch Layers for [Time2Vec: Learning a Vector representation of Time](https://arxiv.org/abs/1907.05321).
 
-Keras implementation of Non-local blocks from [[1]](https://arxiv.org/abs/1907.05321).
 
 
 # Concept
