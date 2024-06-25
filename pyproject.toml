@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "time2vec"
+version = "0.1.0"
+description = ""
+authors = ["Andrew Garcia <garcia.gtr@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
