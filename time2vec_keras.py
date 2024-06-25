@@ -12,6 +12,8 @@ class Time2Vec(layers.Layer):
         -------------
         num_frequency: int
             The number of periodic components to model.
+        num_vars: int
+            The number of variables to consider from the input.
         """
         super(Time2Vec, self).__init__(**kwargs)
         self.num_frequency = num_frequency
@@ -50,7 +52,7 @@ class Time2Vec(layers.Layer):
         # Split inputs into x and t
         x = inputs[:, :, :self.num_vars-1]
         t = inputs[:, :, self.num_vars-1:]
-        print("\nt",t.shape)
+        # print("\nt",t.shape)
 
         # Trend component
         trend_component = self.trend_weight * t + self.trend_bias
