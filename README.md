@@ -1,4 +1,4 @@
-# Time2Vec: Multivariate Implementation in Keras and Torch
+# Time2Vec in Keras and Torch 
 
 My implementation of [Time2Vec: Learning a Vector representation of Time](https://arxiv.org/abs/1907.05321) as Keras and PyTorch Layers.
 
