@@ -2,7 +2,9 @@
 
 My implementation of [Time2Vec: Learning a Vector representation of Time](https://arxiv.org/abs/1907.05321) as Keras and PyTorch Layers.
 
+# How to Use It
 
+**Head straight to our [Time2Vec Usage Template in Google Colab](https://colab.research.google.com/drive/1P2BOAaQlo54SqYCsL8FFq1PffDjQuO1F?usp=sharing)**
 
 # Concept
 
@@ -19,9 +21,6 @@ a vector of size k + 1. This transformation, for an $i^{th}$  element of $\mathb
 ```
 The above incorporates a periodic activation function denoted as $\mathcal{F}$, and involves learnable parameters $\omega_i$ and $\phi_i$ [[1]](https://arxiv.org/abs/1907.05321). 
 
-# How to Use
-
-**Head straight to our [Time2Vec Usage Template in Google Colab](https://colab.research.google.com/drive/1P2BOAaQlo54SqYCsL8FFq1PffDjQuO1F?usp=sharing)**
 
 # Reference
 
