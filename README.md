@@ -6,7 +6,7 @@ My implementation of [Time2Vec: Learning a Vector representation of Time](https:
 
 **Head straight to our [Time2Vec Usage Template in Google Colab](https://colab.research.google.com/drive/1P2BOAaQlo54SqYCsL8FFq1PffDjQuO1F?usp=sharing)**
 
-# Concept
+# The Concept
 
 Time2Vec offers a versatile representation of time with three fundamental properties. It encapsulates scalar notion of time $\tau$,  in $\mathbf{t2v}(\tau)$,
 a vector of size k + 1. This transformation, for an $i^{th}$  element of $\mathbf{t2v}$, is defined as follows:
